@@ -3,6 +3,83 @@
 	height: var(--header-height);
 }
 
+/*
+** header hero text
+*/
+
+.header__hero-text {
+	--dot-size: calc(var(--header-height) / 25);
+}
+
+.header__hero-title {
+	opacity: 0;
+	width: 0;
+		height: 0;
+	pointer-events: none;
+}
+
+.header__hero {
+	position: absolute;
+		top: 0;
+		left: 0;
+	width: 100%;
+		height: inherit;
+}
+.header__hero-text {
+	position: relative;
+	width: 100%;
+		height: 33.3%;
+	display: flex;
+		align-items: baseline;
+}
+.header__hero-svg {
+	height: 91%;
+	margin-top: auto;
+	transform: translate3d(0, 1.8%, 0);
+}
+.header__hero-text.-top {
+	border-bottom: 1px solid var(--c-body);
+}
+.header__hero-text.-center {
+	border-bottom: 1px solid var(--c-body);
+}
+.header__hero-text.-top .header__hero-svg {
+	margin-left: 2%;
+}
+.header__hero-text.-center .header__hero-svg {
+	height: 128%;
+}
+.header__hero-text.-btm .header__hero-svg {
+	margin-left: 1%;
+}
+
+.header__hero-text.-top:after,
+.header__hero-text.-center:after {
+	content: '';
+	position: absolute;
+	width: var(--dot-size);
+		height: var(--dot-size);
+	border-radius: 100%;
+	background-color: var(--c-body);
+}
+.header__hero-text.-top:after {
+	top: calc(60% - var(--dot-size));
+	left: calc(var(--header-height)/1.5);
+}
+.header__hero-text.-center:after {
+	top: calc(65% - var(--dot-size));
+	left: calc(var(--header-height)/2);
+}
+
+/*
+** header grid
+*/
+
+.header__grids {
+	--small-grid-width: 26%;
+	--big-grid-width: calc(100% - var(--small-grid-width)*2)
+}
+
 .header__grids {
 	width: 100%;
 		height: inherit;
@@ -13,38 +90,13 @@
 	height: 100%;
 }
 .header__grid.-left {
-	width: 40%;
+	width: var(--big-grid-width);
+	border-right: 1px solid var(--c-body);
 }
 .header__grid.-center {
-	width: 30%;
+	width: var(--small-grid-width);
+	border-right: 1px solid var(--c-body);
 }
 .header__grid.-right {
-	width: 30%;
-}
-
-
-.header__hero {
-	position: absolute;
-		top: 0;
-		left: 0;
-	height: inherit;
-}
-.header__hero-text {
-	width: 100%;
-		height: 33.3%;
-	display: flex;
-		align-items: baseline;
-}
-.header__hero-svg {
-	height: 88%;
-}
-.header__hero-text.-top .header__hero-svg {
-	margin-left: 4%;
-}
-.header__hero-text.-center .header__hero-svg {
-	height: 125%;
-}
-.header__hero-text.-btm .header__hero-svg {
-	margin-top: auto;
-		margin-left: 2%;
+	width: var(--small-grid-width);
 }

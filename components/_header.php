@@ -1,6 +1,7 @@
 <header class="header" role="banner">
 
 	<div class="header__hero">
+		<h1 class="header__hero-title">Adjacent</h1>
 		<div class="header__hero-text -top">
 			<img
 				class="header__hero-svg"
@@ -22,9 +23,6 @@
 				alt="cent"
 			>
 		</div>
-		<!-- <h1 class="header__hero-text -one">Ad</h1>
-		<h1 class="header__hero-text -two">ja</h1>
-		<h1 class="header__hero-text -three">cent</h1> -->
 	</div>
 
 	<div class="header__grids">
