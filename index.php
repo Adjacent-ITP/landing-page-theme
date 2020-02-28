@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<body>
+<body class="-f-body">
 
 	<header id="site-header" class="header-footer-group" role="banner">
 

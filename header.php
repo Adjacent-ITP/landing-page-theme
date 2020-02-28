@@ -22,5 +22,8 @@
 		-- stylesheets
 		-->
 		<link href="<?php echo get_bloginfo('template_directory'); ?>/styles/_reset.css" rel="stylesheet">
+		<link href="<?php echo get_bloginfo('template_directory'); ?>/styles/_colors.css" rel="stylesheet">
+		<link href="<?php echo get_bloginfo('template_directory'); ?>/styles/_fonts.css" rel="stylesheet">
+		<link href="<?php echo get_bloginfo('template_directory'); ?>/styles/main.css" rel="stylesheet">
 
 	</head>
