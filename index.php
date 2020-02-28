@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 
-<main id="site-content" role="main">
+<body>
 
-<h1>test</h1>
+	<header id="site-header" class="header-footer-group" role="banner">
 
-</main><!-- #site-content -->
+		<h1>test</h1>
 
-<?php
-get_footer();
+	</header>
+
+</body>
+
+<?php get_footer(); ?>

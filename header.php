@@ -18,24 +18,9 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
-		<link rel="profile" href="https://gmpg.org/xfn/11">
-
-		<?php wp_head(); ?>
+		<!--
+		-- stylesheets
+		-->
+		<link href="<?php echo get_bloginfo('template_directory'); ?>/styles/_reset.css" rel="stylesheet">
 
 	</head>
-
-	<body <?php body_class(); ?>>
-
-		<?php
-		wp_body_open();
-		?>
-
-		<header id="site-header" class="header-footer-group" role="banner">
-
-			<h1>test</h1>
-
-		</header><!-- #site-header -->
-
-		<?php
-		// Output the menu modal.
-		get_template_part( 'template-parts/modal-menu' );
