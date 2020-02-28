@@ -1,15 +1,12 @@
 .header {
 	position: relative;
-	height: var(--header-height);
+	height: $header-height;
 }
 
 /*
 ** header hero text
 */
-
-.header__hero-text {
-	--dot-size: calc(var(--header-height) / 25);
-}
+$dot-size: calc(#{$header-height} / 25);
 
 .header__hero-title {
 	opacity: 0;
@@ -38,10 +35,10 @@
 	transform: translate3d(0, 1.8%, 0);
 }
 .header__hero-text.-top {
-	border-bottom: 1px solid var(--c-body);
+	border-bottom: 1px solid $c-body;
 }
 .header__hero-text.-center {
-	border-bottom: 1px solid var(--c-body);
+	border-bottom: 1px solid $c-body;
 }
 .header__hero-text.-top .header__hero-svg {
 	margin-left: 2%;
@@ -57,46 +54,44 @@
 .header__hero-text.-center:after {
 	content: '';
 	position: absolute;
-	width: var(--dot-size);
-		height: var(--dot-size);
+	width: $dot-size;
+		height: $dot-size;
 	border-radius: 100%;
-	background-color: var(--c-body);
+	background-color: $c-body;
 }
 .header__hero-text.-top:after {
-	top: calc(60% - var(--dot-size));
-	left: calc(var(--header-height)/1.5);
+	top: calc(60% - #{$dot-size});
+	left: calc(#{$header-height}/1.5);
 }
 .header__hero-text.-center:after {
-	top: calc(65% - var(--dot-size));
-	left: calc(var(--header-height)/2);
+	top: calc(65% - #{$dot-size});
+	left: calc(#{$header-height}/2);
 }
 
 /*
 ** header grid
 */
+$small-grid-width: 26%;
+$big-grid-width: calc(100% - #{$small-grid-width}*2);
 
-.header__grids {
-	--small-grid-width: 26%;
-	--big-grid-width: calc(100% - var(--small-grid-width)*2)
-}
 
 .header__grids {
 	width: 100%;
 		height: inherit;
 	display: flex;
-	border-bottom: 1px solid var(--c-body);
+	border-bottom: 1px solid $c-body;
 }
 .header__grid {
 	height: 100%;
 }
 .header__grid.-left {
-	width: var(--big-grid-width);
-	border-right: 1px solid var(--c-body);
+	width: $big-grid-width;
+	border-right: 1px solid $c-body;
 }
 .header__grid.-center {
-	width: var(--small-grid-width);
-	border-right: 1px solid var(--c-body);
+	width: $small-grid-width;
+	border-right: 1px solid $c-body;
 }
 .header__grid.-right {
-	width: var(--small-grid-width);
+	width: $small-grid-width;
 }

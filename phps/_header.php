@@ -5,21 +5,21 @@
 		<div class="header__hero-text -top">
 			<img
 				class="header__hero-svg"
-				src="<?php echo get_bloginfo('template_directory'); ?>/assets/svgs/hero-ad.svg"
+				src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/hero-ad.svg"
 				alt="Ad"
 			>
 		</div>
 		<div class="header__hero-text -center">
 			<img
 				class="header__hero-svg"
-				src="<?php echo get_bloginfo('template_directory'); ?>/assets/svgs/hero-ja.svg"
+				src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/hero-ja.svg"
 				alt="ja"
 			>
 		</div>
 		<div class="header__hero-text -btm">
 			<img
 				class="header__hero-svg"
-				src="<?php echo get_bloginfo('template_directory'); ?>/assets/svgs/hero-cent.svg"
+				src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/hero-cent.svg"
 				alt="cent"
 			>
 		</div>

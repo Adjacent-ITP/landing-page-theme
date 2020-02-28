@@ -1,4 +1,0 @@
-:root {
-	--header-height: 85vh;
-	--menu-height: calc(100vh - var(--header-height));
-}
