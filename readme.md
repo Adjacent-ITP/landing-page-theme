@@ -42,22 +42,22 @@ Because `gulpfile.js` is watching all the `scss` and `js` files in `src` folder 
 src
 │
 └───js
-│   │		entry
-│   │   |		entry.js
+│   │  entry
+│   │  └ entry.js
 │   │
-│ 	│		*other folders*
+│   │ ...other folders
 │
 └───styles
-    │   pages
-		│ 	layouts
-		│ 	foundations
-		│ 	components
-		│
-    │   style.scss
-    │   _pages.scss
-		│ 	_layouts.scss
-		│ 	_foundations.scss
-		│ 	_components.scss
+    │  pages
+    │  layouts
+    │  foundations
+    │  components
+    │
+    │  style.scss
+    │  _pages.scss
+    │  _layouts.scss
+    │  _foundations.scss
+    │  _components.scss
 
 ```
 
