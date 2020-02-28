@@ -1,0 +1,50 @@
+.header {
+	position: relative;
+	height: var(--header-height);
+}
+
+.header__grids {
+	width: 100%;
+		height: inherit;
+	display: flex;
+	border-bottom: 1px solid var(--c-body);
+}
+.header__grid {
+	height: 100%;
+}
+.header__grid.-left {
+	width: 40%;
+}
+.header__grid.-center {
+	width: 30%;
+}
+.header__grid.-right {
+	width: 30%;
+}
+
+
+.header__hero {
+	position: absolute;
+		top: 0;
+		left: 0;
+	height: inherit;
+}
+.header__hero-text {
+	width: 100%;
+		height: 33.3%;
+	display: flex;
+		align-items: baseline;
+}
+.header__hero-svg {
+	height: 88%;
+}
+.header__hero-text.-top .header__hero-svg {
+	margin-left: 4%;
+}
+.header__hero-text.-center .header__hero-svg {
+	height: 125%;
+}
+.header__hero-text.-btm .header__hero-svg {
+	margin-top: auto;
+		margin-left: 2%;
+}

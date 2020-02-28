@@ -2,11 +2,7 @@
 
 <body class="-f-body">
 
-	<header id="site-header" class="header-footer-group" role="banner">
-
-		<h1>test</h1>
-
-	</header>
+	<?php get_template_part( './components/_header' ); ?>
 
 </body>
 

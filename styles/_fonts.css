@@ -51,7 +51,6 @@
 
 	/* level 2 */
 	--f-title: var(--f-sub);
-	--f-hero: var(--f-sub);
 	--f-body: var(--f-main);
 	--f-body-italic: var(--f-main-i);
 	--f-body-bold: var(--f-main-b);
@@ -69,11 +68,9 @@
 :root {
 
 	--fs-root: 16px;
-	--fs-hero: 17.5rem;
 	--fs-title: 2.625rem;
 	--fs-subtitle: 1.125rem;
 	--fs-body: 1rem;
-
 }
 
 /*---------------------*/
@@ -84,12 +81,6 @@
 */
 /*---------------------*/
 
-.-f-hero {
-	font-family: var(--f-hero);
-		font-size: var(--fs-hero);
-		line-height: 17.5rem;
-	color: var(--c-main);
-}
 .-f-title {
 	font-family: var(--f-title);
 		font-size: var(--fs-subtitle);
