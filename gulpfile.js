@@ -83,12 +83,13 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('make:js', function() {
-	return gulp.src('src/js/entry/entry.js')
+	return gulp.src([src.js + 'vendor/*.js', src.js + 'main.js', src.js + 'modules/*.js'])
 		.pipe(plumber({
 			errorHandler: onError
 		}))
 		.pipe(sourcemaps.init())
 		.pipe(sourcemaps.write())
+		.pipe(concat('main.js'))
 		.pipe(gulp.dest(dest.js))
 		.pipe(browserSync.stream());
 });
