@@ -25,6 +25,22 @@
 		</div>
 	</div>
 
+	<div class="header__info">
+		<div class="header__info-top">
+			<p class="header__info-paragraph">
+				Online journal of emerging media published by ITP. Its mission is to share research, reflection, observations, and opinions from and for the diverse creators that are exploring the possibilities and directions at the frontiers of media and technology.
+			</p>
+		</div>
+		<div class="header__info-btm">
+			<a href="#" class="header__info-btn-link">
+				<button class="header__info-btn -solid">Subscribe to our newsletter</button>
+			</a>
+			<a href="#" class="header__info-btn-link">
+				<button class="header__info-btn">Submit and article</button>
+			</a>
+		</div>
+	</div>
+
 	<div class="header__grids">
 		<div class="header__grid -left"></div>
 		<div class="header__grid -center"></div>

@@ -119,3 +119,56 @@ $big-grid-width: calc(100% - #{$small-grid-width}*2);
 		width: $small-grid-width;
 	}
 }
+
+/*
+** header info
+*/
+.header__info {
+	font-size: $fs-subtitle;
+		line-height: 1.75em;
+	position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 1;
+	width: calc(#{$small-grid-width} * 1.2);
+		max-width: 25rem;
+		height: 100%;
+	display: flex;
+    flex-direction: column;
+		justify-content: center;
+
+	&-paragraph {
+		text-align: right;
+		margin-bottom: 2.5rem;
+	}
+
+	&-btn {
+		@include f-btn;
+		width: 100%;
+			height: 3rem;
+		background-color: transparent;
+		border: 1px solid $c-theme;
+		color: $c-theme;
+
+		&:hover {
+			background-color: $c-theme;
+			color: $c-light;
+			transition: all .3s;
+		}
+	}
+	&-btn.-solid {
+		background-color: $c-theme;
+		border: none;
+		color: $c-light;
+
+		&:hover {
+			background-color: transparent;
+			color: $c-theme;
+			border: 1px solid $c-theme;
+			transition: all .3s;
+		}
+	}
+	&-btn:first-child {
+		margin-bottom: 1.5rem;
+	}
+}
