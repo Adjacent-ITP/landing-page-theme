@@ -105,6 +105,11 @@ $fs-body: 1rem;
 }
 .-f-body.-italic { @include f-body-italic }
 
+@mixin f-btn {
+	font-family: $f-body-bold;
+}
+.-f-btn { @include f-btn }
+
 @mixin fc-light {
 	color: $c-light;
 }
