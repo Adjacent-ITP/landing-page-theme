@@ -32,6 +32,13 @@
   &-btn-text {
     margin-right: 1rem;
   }
+  &-btn-icon {
+    transition: 0.3s;
+  }
+  &-btn:hover .footer__bar-btn-icon {
+    transform: translate3d(0, -0.25rem, 0);
+    transition: 0.3s;
+  }
 }
 
 .footer__main {

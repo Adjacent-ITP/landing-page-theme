@@ -3,10 +3,10 @@
 			<div class="footer__bar">
 				<button class="footer__bar-btn">
 					<span class="footer__bar-btn-text">BACK TO THE TOP</span>
-					<div
+					<img
 						class="footer__bar-btn-icon"
 						src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/icon-arrow-up.svg"
-						alt="Instagram"
+						alt="Arrow up"
 					>
 				</button>
 			</div>
