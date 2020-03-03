@@ -64,6 +64,11 @@
 		border-bottom: 1px solid $c-body;
 	}
 
+	&-btn:hover {
+		border-bottom: 1px solid $c-body;
+		transform: translate3d(0, 1px, 0);
+	}
+
 	&:after {
 		position: absolute;
 			top: calc(55% - #{$chevron-size});
@@ -75,5 +80,9 @@
 		width: $chevron-size;
 			height: $chevron-size;
 		transform: rotate(135deg);
+	}
+	&.-is-active:after {
+		top: calc(68% - #{$chevron-size});
+		transform: rotate(-45deg);
 	}
 }

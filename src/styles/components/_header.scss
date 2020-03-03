@@ -150,10 +150,10 @@ $big-grid-width: calc(100% - #{$small-grid-width}*2);
 		border: 1px solid $c-theme;
 		color: $c-theme;
 
-		&:hover {
-			background-color: $c-theme;
-			color: $c-light;
-			transition: all .3s;
+		&:hover span {
+			// background-color: $c-theme;
+			// color: $c-light;
+			border-bottom: 1px solid $c-theme;
 		}
 	}
 	&-btn.-solid {
@@ -161,11 +161,11 @@ $big-grid-width: calc(100% - #{$small-grid-width}*2);
 		border: none;
 		color: $c-light;
 
-		&:hover {
-			background-color: transparent;
-			color: $c-theme;
-			border: 1px solid $c-theme;
-			transition: all .3s;
+		&:hover span {
+			// background-color: transparent;
+			// color: $c-theme;
+			// border: 1px solid $c-theme;
+			border-bottom: 1px solid $c-light;
 		}
 	}
 	&-btn:first-child {

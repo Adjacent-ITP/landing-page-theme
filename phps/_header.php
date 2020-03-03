@@ -33,10 +33,10 @@
 		</div>
 		<div class="header__info-btm">
 			<a href="#" class="header__info-btn-link">
-				<button class="header__info-btn -solid">Subscribe to our newsletter</button>
+				<button class="header__info-btn -solid"><span>Subscribe to our newsletter</span></button>
 			</a>
 			<a href="#" class="header__info-btn-link">
-				<button class="header__info-btn">Submit and article</button>
+				<button class="header__info-btn"><span>Submit and article</span></button>
 			</a>
 		</div>
 	</div>
