@@ -5,6 +5,11 @@
   flex-direction: column;
   position: relative;
 }
+.footer {
+  @include media("below-small") {
+    height: $footer-height-small;
+  }
+}
 
 .footer__bar {
   position: relative;
@@ -40,16 +45,26 @@
     transition: 0.3s;
   }
 }
+.footer__bar {
+  @include media("below-small") {
+    margin-bottom: 0;
+  }
+}
 
 .footer__main {
   height: 100%;
   z-index: 1;
+}
 
-  &-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer__main-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__main-container {
+  @include media("below-small") {
+    justify-content: center;
   }
 }
 
