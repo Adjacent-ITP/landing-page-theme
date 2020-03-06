@@ -20,7 +20,7 @@ $hero-height-small: 45vh;
 $info-height-small: calc(100vh - #{$hero-height-small});
 $dot-size-small: calc(#{$hero-height-small} / 20);
 
-$hero-height-mobile-small: 40vh;
+$hero-height-mobile-small: 45vh;
 $info-height-mobile-small: calc(100vh - #{$hero-height-mobile-small});
 
 .header__hero-title {
@@ -303,6 +303,9 @@ $big-grid-width: calc(100% - #{$small-grid-width}* 2);
     top: $hero-height-mobile-small;
     line-height: 1.35rem;
 
+    &-top {
+      width: 90%;
+    }
     &-paragraph {
       margin-bottom: 2rem;
     }
