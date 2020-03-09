@@ -1,4 +1,11 @@
+html,
 body {
-	@include f-body;
-	background-color: $c-background;
+  @include f-body;
+  background-color: $c-background;
+  max-width: 100vw;
+  overflow-x: hidden;
+
+  @include media("below-mobile") {
+    font-size: $fs-root-mobile;
+  }
 }
