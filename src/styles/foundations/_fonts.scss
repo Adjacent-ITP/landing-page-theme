@@ -80,7 +80,7 @@ $fs-root-mobile: 14px;
 
 @mixin f-title {
   font-family: $f-title;
-  font-size: $fs-subtitle;
+  font-size: $fs-title;
   line-height: 2.25rem;
   color: $c-main;
 }
@@ -90,7 +90,7 @@ $fs-root-mobile: 14px;
 
 @mixin f-subtitle {
   font-family: $f-body-bold;
-  font-size: $fs-title;
+  font-size: $fs-subtitle;
   color: $c-main;
 }
 .-f-subtitle {
