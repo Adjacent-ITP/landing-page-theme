@@ -1,8 +1,8 @@
 .main {
-  background-color: #eeedec;
+  background-color: $c-background;
   z-index: 1;
-  position: relative;
   padding: 10% 0;
+  position: relative;
 }
 
 .container {
@@ -11,94 +11,80 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: auto;
-  grid-column-gap: 10vw;
-  grid-row-gap: 2rem;
-  //   padding: 10% 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10%;
 }
 
+$card-size: calc(50vw - 5vw);
+$card-content-width: 80%;
+$card-index-width: 7vw;
+
 .card {
+  max-width: $card-size;
+  min-width: $card-size;
+  margin-bottom: 8rem;
   border: none;
-  position: relative;
 
   &.-right {
-    margin-top: 10%;
-  }
-  &.-left {
-    margin-top: -10%;
+    transform: translate3d(0, 25%, 0);
   }
 }
 
 .card__link {
+  display: block;
   color: $c-main;
 }
 
 .card__head {
   position: relative;
   z-index: 3;
-  margin-bottom: 2%;
-}
+  padding-bottom: 2.5%;
+  width: $card-content-width;
 
-.card__index {
-  position: relative;
-  display: inline-block;
-  width: 8vw;
-  height: auto;
-  vertical-align: middle;
-  max-width: 100px;
-  text-align: center;
-}
-
-.card__title {
-  position: relative;
-  display: inline-block;
-  margin-left: -2%;
-  font-size: $fs-title;
-  font-family: $f-sub;
-  text-align: center;
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
+  &.-left {
+    margin-left: auto;
   }
+  &.-right .card__head-title {
+    margin-left: 1rem;
+  }
+}
+.card__head-index {
+  position: absolute;
+  left: calc(#{$card-index-width} * -0.8);
+  bottom: -130%;
+  width: $card-index-width;
+  height: auto;
 }
 
 .card__thumbnail {
   position: relative;
-  margin-top: -10%;
   z-index: 2;
+  margin-bottom: 1.8rem;
+  max-height: 26.25rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &.-right {
-    margin-left: calc(8vw - 2%);
-  }
-  &:hover {
-    cursor: pointer;
-  }
-}
-
-.card__img {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  z-index: 2;
-  &:hover {
-    cursor: pointer;
+  &-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
   }
 }
 
 .card__content {
-  margin: 2%;
-  padding: 16px;
   line-height: 1.5;
+  width: $card-content-width;
 
   &.-left {
-    margin-left: 16%;
+    margin: 0 0 0 auto;
   }
   &.-right {
-    margin-left: calc(8vw - 2%);
-    margin-right: 8%;
+    margin-left: 2px;
   }
 }
 
@@ -112,15 +98,19 @@
 }
 
 .load-link {
-  @include f-subtitle;
-  margin-top: 8vh;
   width: 100%;
   text-align: center;
 
-  font-weight: bold;
+  &__btn {
+    font-family: $f-body-bold;
+    font-size: $fs-subtitle;
+    border: none;
+    background-color: transparent;
 
-  &:hover {
-    text-decoration: underline;
-    cursor: pointer;
+    @include media("above-desktop") {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
