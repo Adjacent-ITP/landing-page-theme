@@ -1,4 +1,7 @@
 window.onload = () => {
+  const revealCount = 4;
+  const hiddenFlag = "-is-hidden";
+
   /*
    ** menu dropdown
    */
@@ -10,6 +13,8 @@ window.onload = () => {
   const menuDropdownListChoice = Array.from(
     document.getElementsByClassName("menu__dropdown-choice")
   );
+  const cards = Array.from(document.getElementsByClassName("card"));
+  const cardsContainer = document.getElementsByClassName("grid-container")[0];
 
   /* helper functions */
   function toggleClass(node, isToRemove = true, cssClass = "-is-active") {
@@ -25,8 +30,42 @@ window.onload = () => {
   menuDropdownListChoice.forEach(btn => {
     btn.addEventListener("click", event => {
       const { dropdownChoice } = btn.dataset;
-      // change menu text
-      menuBtn.textContent = dropdownChoice;
+
+      // sort cards
+      const isChangingSort = menuBtn.textContent !== dropdownChoice;
+      if (isChangingSort) {
+        // change menu text
+        menuBtn.textContent = dropdownChoice;
+
+        /* sort */
+        function hideCards(isReversed = true) {
+          cards.forEach((card, index) => {
+            const addFlagCondition = isReversed
+              ? index < cards.length - revealCount
+              : index >= revealCount;
+            if (addFlagCondition) {
+              card.classList.add(hiddenFlag);
+            } else {
+              card.classList.remove(hiddenFlag);
+            }
+          });
+        }
+        function removeTransition() {
+          cardsContainer.classList.remove("-is-reversing");
+        }
+        function toSort(isRemoving) {
+          if (!isRemoving) cardsContainer.classList.add("-is-reversed");
+          else cardsContainer.classList.remove("-is-reversed");
+
+          hideCards(!isRemoving);
+        }
+
+        // 1. add -is-reversing for smooth opacity effect
+        // 2. execute sorting and remove -is-reversing at the same time
+        cardsContainer.classList.add("-is-reversing");
+        setTimeout(removeTransition, 500);
+        setTimeout(toSort, 500, dropdownChoice !== "Oldest");
+      }
 
       // cancel not selected text
       const activeText = document.getElementsByClassName(
@@ -59,15 +98,13 @@ window.onload = () => {
   });
 
   /*
-   ** load
+   ** sort and load
    */
-  const cards = Array.from(document.getElementsByClassName("card"));
+
+  /* load */
   const loadMoreBtn = document.getElementsByClassName("load-link")[0];
 
   loadMoreBtn.addEventListener("click", () => {
-    const revealCount = 4;
-    const hiddenFlag = "-is-hidden";
-
     // reveal 4 hidden cards
     const hiddenCards = cards.filter(card =>
       card.classList.contains(hiddenFlag)

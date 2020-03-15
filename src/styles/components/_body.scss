@@ -16,6 +16,17 @@
   justify-content: space-between;
   margin-bottom: 10%;
 }
+.grid-container {
+  transition: opacity 0.3s;
+
+  &.-is-reversing {
+    opacity: 0;
+  }
+  &.-is-reversed {
+    flex-wrap: wrap-reverse;
+    flex-direction: row-reverse;
+  }
+}
 
 /*
 ** cards
@@ -35,11 +46,20 @@ $card-index-width: 7vw;
     transform: translate3d(0, 25%, 0);
   }
 }
+.grid-container.-is-reversed .card {
+  &.-right {
+    transform: translate3d(0, 0, 0);
+  }
+  &.-left {
+    transform: translate3d(0, 25%, 0);
+  }
+}
 .card {
   transition: opacity 0.3s;
   &.-is-hidden {
     opacity: 0;
     height: 0;
+    margin-bottom: 0;
     pointer-events: none;
     transition: opacity 0.3s;
   }
@@ -63,6 +83,18 @@ $card-index-width: 7vw;
     margin-left: 1rem;
   }
 }
+.grid-container.-is-reversed .card__head {
+  &.-right {
+    margin-left: auto;
+  }
+  &.-left {
+    margin-left: 0;
+  }
+  &.-left .card__head-title {
+    margin-left: 1rem;
+  }
+}
+
 .card__head-index {
   position: absolute;
   left: calc(#{$card-index-width} * -0.8);
@@ -97,6 +129,14 @@ $card-index-width: 7vw;
     margin: 0 0 0 auto;
   }
   &.-right {
+    margin-left: 2px;
+  }
+}
+.grid-container.-is-reversed .card__content {
+  &.-right {
+    margin: 0 0 0 auto;
+  }
+  &.-left {
     margin-left: 2px;
   }
 }
