@@ -1,5 +1,6 @@
 <?php $index = 1; ?>
 <?php $colFlag = "-left"; ?>
+<?php $hiddenFlag = ""; ?>
 
 <div class="main">
 	<div class="container">
@@ -9,7 +10,8 @@
 				<?php if($index % 2 != 0): $colFlag = "-left"; ?>
 				<?php else: $colFlag = "-right";?>
 				<?php endif; ?>
-					<div class="card <?php echo $colFlag; ?>">
+				<?php if($index > 4): $hiddenFlag = " -is-hidden"; endif; ?>
+					<div class="card <?php echo $colFlag; echo $hiddenFlag; ?>">
 						<a href="#" class="card__link">
 							<div class="card__container">
 								<div class="card__head <?php echo $colFlag; ?>">

@@ -17,6 +17,10 @@
   margin-bottom: 10%;
 }
 
+/*
+** cards
+*/
+
 $card-size: calc(50vw - 5vw);
 $card-content-width: 80%;
 $card-index-width: 7vw;
@@ -29,6 +33,15 @@ $card-index-width: 7vw;
 
   &.-right {
     transform: translate3d(0, 25%, 0);
+  }
+}
+.card {
+  transition: opacity 0.3s;
+  &.-is-hidden {
+    opacity: 0;
+    height: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
   }
 }
 
@@ -97,6 +110,10 @@ $card-index-width: 7vw;
   font-style: italic;
 }
 
+/*
+** load more btn
+*/
+
 .load-link {
   width: 100%;
   text-align: center;
@@ -113,4 +130,8 @@ $card-index-width: 7vw;
       }
     }
   }
+}
+
+.load-link.-is-hidden {
+  display: none;
 }
