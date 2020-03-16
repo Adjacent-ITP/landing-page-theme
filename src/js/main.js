@@ -1,9 +1,12 @@
 window.onload = () => {
+  /*
+   ** variables
+   */
   const revealCount = 4;
   const hiddenFlag = "-is-hidden";
 
   /*
-   ** menu dropdown
+   ** dom elements
    */
   const menuDropdown = document.getElementsByClassName("menu__dropdown")[0];
   const menuBtn = document.getElementsByClassName("menu__dropdown-btn")[0];
@@ -15,7 +18,11 @@ window.onload = () => {
   );
   const cards = Array.from(document.getElementsByClassName("card"));
   const cardsContainer = document.getElementsByClassName("grid-container")[0];
+  const loadMoreBtn = document.getElementsByClassName("load-link")[0];
 
+  /*
+   ** menu dropdown
+   */
   /* helper functions */
   function toggleClass(node, isToRemove = true, cssClass = "-is-active") {
     node.classList[isToRemove ? "remove" : "add"](cssClass);
@@ -54,14 +61,19 @@ window.onload = () => {
           cardsContainer.classList.remove("-is-reversing");
         }
         function toSort(isRemoving) {
+          // 1. add or remove '-is-reversed' class
           if (!isRemoving) cardsContainer.classList.add("-is-reversed");
           else cardsContainer.classList.remove("-is-reversed");
 
+          // 2. show load more btn
+          loadMoreBtn.classList.remove(hiddenFlag);
+
+          // 3. hide the not revealing cards
           hideCards(!isRemoving);
         }
 
-        // 1. add -is-reversing for smooth opacity effect
-        // 2. execute sorting and remove -is-reversing at the same time
+        // 1. add '-is-reversing' for smooth opacity effect
+        // 2. execute sorting and remove '-is-reversing' at the same time
         cardsContainer.classList.add("-is-reversing");
         setTimeout(removeTransition, 500);
         setTimeout(toSort, 500, dropdownChoice !== "Oldest");
@@ -102,8 +114,6 @@ window.onload = () => {
    */
 
   /* load */
-  const loadMoreBtn = document.getElementsByClassName("load-link")[0];
-
   loadMoreBtn.addEventListener("click", () => {
     // reveal 4 hidden cards
     const hiddenCards = cards.filter(card =>
