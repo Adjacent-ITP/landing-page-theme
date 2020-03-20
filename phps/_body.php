@@ -17,7 +17,7 @@
 								<div class="card__head <?php echo $colFlag; ?>">
 									<img
 										class="card__head-index <?php echo $colFlag; ?>"
-										src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/index_<?php the_field('issue_number'); ?>.svg"
+										src="<?php the_field('issue_number_image'); ?>"
 										alt="<?php the_field('issue_number'); ?>"
 									>
 									<h2 class="card__head-title -f-title"><?php the_field('title'); ?></h2>
