@@ -34,7 +34,8 @@
 
 $card-size: calc(50vw - 5vw);
 $card-content-width: 80%;
-$card-index-width: 7vw;
+$card-index-width: calc(#{$card-size} * 0.15);
+$card-side-margin: 10%;
 
 .card {
   max-width: $card-size;
@@ -73,6 +74,7 @@ $card-index-width: 7vw;
 .card__head {
   position: relative;
   z-index: 3;
+  padding-top: 6vh;
   padding-bottom: 2.5%;
   width: $card-content-width;
 
@@ -98,7 +100,7 @@ $card-index-width: 7vw;
 .card__head-index {
   position: absolute;
   left: calc(#{$card-index-width} * -0.8);
-  bottom: -130%;
+  bottom: -50%;
   width: $card-index-width;
   height: auto;
 }
@@ -142,12 +144,71 @@ $card-index-width: 7vw;
 }
 
 .card__content-text.-brief {
-  margin-bottom: 16px;
+  margin-bottom: 2rem;
 }
 
 .card__content-text.-date {
-  margin-top: 32px;
+  padding-bottom: 2.5rem;
   font-style: italic;
+}
+
+/*
+** hover effect
+*/
+$hover-box-width: calc(#{$card-content-width} + 10%);
+.card__container {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: $hover-box-width;
+    height: 100%;
+    border: 1px solid transparent;
+    transition: border-color 0.3s;
+
+    .-left & {
+      left: calc((100% - #{$card-content-width}) / 2);
+    }
+    .-right & {
+      left: 0;
+    }
+  }
+
+  .-left & {
+    padding-right: $card-side-margin;
+  }
+  .-right & {
+    padding-left: $card-side-margin;
+  }
+
+  @include media("above-desktop") {
+    &:hover {
+      &:after {
+        border-color: $c-theme;
+        transition: border-color 0.3s;
+      }
+    }
+  }
+}
+.grid-container.-is-reversed {
+  .card.-left .card__container {
+    padding-left: $card-side-margin;
+    padding-right: 0;
+
+    &:after {
+      left: 0;
+    }
+  }
+  .card.-right .card__container {
+    padding-left: 0;
+    padding-right: $card-side-margin;
+
+    &:after {
+      left: calc((100% - #{$card-content-width}) / 2);
+    }
+  }
 }
 
 /*
