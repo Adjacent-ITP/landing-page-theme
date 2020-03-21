@@ -13,7 +13,7 @@
 				<?php if($index > 4): $hiddenFlag = " -is-hidden"; endif; ?>
 					<div class="card <?php echo $colFlag; echo $hiddenFlag; ?>">
 						<a href="#" class="card__link">
-							<div class="card__container" id = "<?php the_field('issue_number'); ?>">
+							<div class="card__container">
 								<div class="card__head <?php echo $colFlag; ?>">
 									<img
 										class="card__head-index <?php echo $colFlag; ?>"
@@ -33,9 +33,7 @@
 									<p class="card__content-text -brief"><?php the_field('description'); ?></p>
 									<p class="card__content-text -date">Published on <?php echo the_field('published_date'); ?></p>
 								</div>
-								<div class = "card__hoverbox"></div>
-                            </div>
-                            
+							</div>
 						</a>
 					</div>
 				<?php $index++; ?>
@@ -46,8 +44,3 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/JavaScript"> 
-
-
-</script> 

@@ -1,0 +1,25 @@
+.card {
+  @include media("below-mobile") {
+    max-width: $card-size-mobile;
+    min-width: $card-size-mobile;
+    margin-bottom: 4rem;
+
+    &.-right {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+.card__head {
+  @include media("below-mobile") {
+    padding-left: 15vw;
+  }
+}
+
+.card__head-index {
+  @include media("below-mobile") {
+    left: -2vw;
+    bottom: -40%;
+    width: $card-index-width-mobile;
+  }
+}
