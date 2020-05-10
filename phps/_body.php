@@ -12,7 +12,7 @@
 				<?php endif; ?>
 				<?php if($index > 4): $hiddenFlag = " -is-hidden"; endif; ?>
 					<div class="card <?php echo $colFlag; echo $hiddenFlag; ?>">
-						<a href="#" class="card__link">
+						<a href="https://itp.nyu.edu/adjacent/issue-<?php the_field('issue_number'); ?>" class="card__link">
 							<div class="card__container">
 								<div class="card__head <?php echo $colFlag; ?>">
 									<img
