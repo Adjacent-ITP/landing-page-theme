@@ -32,10 +32,10 @@
 			</p>
 		</div>
 		<div class="header__info-btm">
-			<a href="#" class="header__info-btn-link">
+			<a href="http://eepurl.com/gJqnwr" class="header__info-btn-link" target="_blank">
 				<button class="header__info-btn -solid"><span>Subscribe to our newsletter</span></button>
 			</a>
-			<a href="#" class="header__info-btn-link">
+			<a href="https://forms.gle/YH3T8HjcfbqTVoMy5" class="header__info-btn-link" target="_blank">
 				<button class="header__info-btn"><span>Submit and article</span></button>
 			</a>
 		</div>
