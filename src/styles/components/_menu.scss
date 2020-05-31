@@ -1,26 +1,18 @@
 .menu {
   position: relative;
   z-index: 2;
-  height: $menu-height;
   background-color: $c-background;
   border-top: 1px solid $c-body;
   border-bottom: 1px solid $c-body;
-  padding: 0 0.5rem;
+  padding: var(--bar-padding-horizontal) var(--bar-padding-side);
   display: flex;
   align-items: flex-end;
-}
-
-.menu {
-  @include media("below-desktop") {
-    height: $menu-height-desktop;
-  }
 }
 
 .menu__container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: calc(#{$menu-height} * 0.1);
 }
 
 .menu__title {

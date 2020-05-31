@@ -26,20 +26,25 @@
 	</div>
 
 	<div class="header__info">
-		<div class="header__info-top">
-			<p class="header__info-paragraph">
-				Online journal of emerging media published by ITP. Its mission is to share research, reflection, observations, and opinions from and for the diverse creators that are exploring the possibilities and directions at the frontiers of media and technology.
-			</p>
-		</div>
-		<div class="header__info-btm">
-			<a href="http://eepurl.com/gJqnwr" class="header__info-btn-link" target="_blank">
-				<button class="header__info-btn -solid"><span>Subscribe to our newsletter</span></button>
-			</a>
-			<a href="https://forms.gle/YH3T8HjcfbqTVoMy5" class="header__info-btn-link" target="_blank">
-				<button class="header__info-btn"><span>Submit and article</span></button>
-			</a>
-		</div>
+		<a href="#" class="header-latest">
+			<div class="header-latest__top">
+				<span class="header-latest__heading">LATEST ISSUE</span>
+				<h3 class="header-latest__title">Feeling</h3>
+			</div>
+			<div class="header-latest__main">
+				<div class="header-latest__preview" style="background-color: blue;">
+				</div>
+			</div>
+			<div class="header-latest__btm">
+				<span class="header-latest__cta">Read Full Issue  ></span>
+			</div>
+		</a>
 	</div>
+
+	<ul class="header__links">
+		<li class="header__links-item"><a href="#" class="header__links-link">About</a></li>
+		<li class="header__links-item"><a href="#" class="header__links-link">Submit an Article</a></li>
+	</ul>
 
 	<div class="header__grids">
 		<div class="header__grid -left"></div>

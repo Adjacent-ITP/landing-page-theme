@@ -1,4 +1,4 @@
-$header-height: 85vh;
+$header-height: 60vh;
 $header-height-desktop: 65vh;
 $header-height-small: 100vh;
 
@@ -9,3 +9,8 @@ $footer-height: 500px;
 $footer-bar-height: 64px;
 
 $footer-height-small: 400px;
+
+:root {
+  --bar-padding-side: 3rem;
+  --bar-padding-horizontal: 1rem;
+}
