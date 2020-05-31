@@ -1,12 +1,18 @@
 @include media("below-desktop") {
-  .card {
-    max-width: calc(50vw - 1vw);
+  .grid-container {
+    max-width: 90vw;
+  }
+
+  .card__head-index {
+    bottom: -25%;
+    width: calc(var(--card-size) * 0.2);
   }
 }
 
 @include media("below-small") {
   .grid-container {
     flex-direction: column;
+    max-width: 100vw;
   }
   .card {
     max-width: 100vw;
@@ -28,5 +34,16 @@
   .card__content.-left,
   .grid-container.-is-reversed .card__content.-right {
     margin-left: 0;
+  }
+
+  .card__head-index {
+    bottom: -50%;
+    width: calc(var(--card-size) * 0.3);
+  }
+}
+
+@include media("below-mobile") {
+  .card__head-index {
+    bottom: -25%;
   }
 }

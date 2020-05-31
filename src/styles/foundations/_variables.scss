@@ -14,3 +14,10 @@ $footer-height-small: 400px;
   --bar-padding-side: 3rem;
   --bar-padding-horizontal: 1rem;
 }
+
+@include media("below-desktop") {
+  :root {
+    --bar-padding-side: 1.5rem;
+    --bar-padding-horizontal: 0.8rem;
+  }
+}
