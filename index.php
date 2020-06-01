@@ -17,10 +17,10 @@
 				<p class="info-box__info-text">ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program, or ITP. Its mission is to share research, reflection, observations, and opinions from and for the diverse creators that are exploring the possibilities and directions at the frontiers of media and technology.</p>
 			</div>
 			<div class="info-box__btns">
-				<a href="http://eepurl.com/gJqnwr" class="info-box__btns-btn" target="_blank">
+				<a href="http://eepurl.com/gJqnwr" class="info-box__btns-btn" target="_blank" rel="noreferrer noopener">
 					<button class="info-box__btns-link -solid"><span>Subscribe to our newsletter</span></button>
 				</a>
-				<a href="<?php echo get_bloginfo('url'); ?>/about" class="info-box__btns-btn" target="_blank">
+				<a href="<?php echo get_bloginfo('url'); ?>/about" class="info-box__btns-btn" target="_blank" rel="noreferrer noopener">
 					<button class="info-box__btns-link"><span>Learn More</span></button>
 				</a>
 			</div>
