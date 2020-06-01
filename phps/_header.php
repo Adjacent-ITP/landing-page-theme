@@ -41,11 +41,6 @@
 		</a>
 	</div>
 
-	<ul class="header__links">
-		<li class="header__links-item"><a href="#" class="header__links-link">About</a></li>
-		<li class="header__links-item"><a href="#" class="header__links-link">Submit an Article</a></li>
-	</ul>
-
 	<div class="header__grids">
 		<div class="header__grid -left"></div>
 		<div class="header__grid -center"></div>

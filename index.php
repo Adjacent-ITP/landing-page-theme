@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
-<body>
+<body
+	<?php if(is_front_page()) { echo "class='homepage'"; } ?>
+>
 
+	<?php get_template_part( './phps/_nav' ); ?>
 	<?php get_template_part( './phps/_header' ); ?>
 
 	<div class="info-box">

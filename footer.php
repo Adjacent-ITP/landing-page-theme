@@ -14,6 +14,9 @@
 			<div class="footer__main">
 				<div class="footer__main-container">
 					<div class="footer__main-top">
+						<img src="<?php echo get_bloginfo('template_directory'); ?>/public/assets/svgs/logo.svg" alt="adjacent logo" class="footer__main-logo">
+					</div>
+					<div class="footer__main-center">
 						<div class="footer__main-icons">
 							<a href="#" class="footer__main-icon">
 								<div class="footer__main-icon-svg">

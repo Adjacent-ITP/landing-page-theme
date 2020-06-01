@@ -5,7 +5,7 @@ $header-height-small: 100vh;
 $menu-height: calc(100vh - #{$header-height});
 $menu-height-desktop: 5rem;
 
-$footer-height: 500px;
+$footer-height: 400px;
 $footer-bar-height: 64px;
 
 $footer-height-small: 400px;
@@ -13,6 +13,7 @@ $footer-height-small: 400px;
 :root {
   --bar-padding-side: 3rem;
   --bar-padding-horizontal: 1rem;
+  --nav-height: 80px;
 }
 
 @include media("below-desktop") {

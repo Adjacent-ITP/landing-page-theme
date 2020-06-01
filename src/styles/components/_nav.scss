@@ -1,0 +1,30 @@
+.nav {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: var(--bar-padding-side);
+  display: flex;
+  height: var(--nav-height);
+}
+.nav__item {
+  padding: 1rem 1rem;
+  border: none;
+  background-color: transparent;
+
+  &:first-child {
+    margin-right: 2rem;
+  }
+  &:last-child {
+    padding-right: 0;
+  }
+}
+.nav__item-link {
+  font-family: $f-sub;
+  color: $c-body;
+
+  @include media("above-desktop") {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

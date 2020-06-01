@@ -248,28 +248,3 @@ $big-grid-width: calc(100% - #{$small-grid-width}* 2);
   min-height: inherit;
   background-position: center;
 }
-
-.header__links {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: var(--bar-padding-side);
-  display: flex;
-}
-.header__links-item {
-  padding: 1rem 0;
-
-  &:first-child {
-    margin-right: 2rem;
-  }
-}
-.header__links-link {
-  font-family: $f-sub;
-  color: $c-body;
-
-  @include media("above-desktop") {
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
