@@ -7,13 +7,14 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   height: var(--nav-height);
   width: 100vw;
 }
 .nav.-is-about {
   border-bottom: 1px solid $c-body;
   background-color: $c-background;
+  justify-content: space-between;
 }
 
 .nav__item {

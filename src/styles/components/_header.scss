@@ -247,4 +247,5 @@ $big-grid-width: calc(100% - #{$small-grid-width}* 2);
 .header-latest__preview {
   min-height: inherit;
   background-position: center;
+  background-size: cover;
 }

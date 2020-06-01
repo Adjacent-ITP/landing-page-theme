@@ -1,5 +1,5 @@
 window.onload = () => {
-  if (document.querySelector("homepage")) {
+  if (document.querySelector(".homepage")) {
     /*
      ** variables
      */
