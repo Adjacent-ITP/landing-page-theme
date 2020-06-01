@@ -20,7 +20,7 @@
 				<a href="http://eepurl.com/gJqnwr" class="info-box__btns-btn" target="_blank">
 					<button class="info-box__btns-link -solid"><span>Subscribe to our newsletter</span></button>
 				</a>
-				<a href="https://forms.gle/YH3T8HjcfbqTVoMy5" class="info-box__btns-btn" target="_blank">
+				<a href="<?php echo get_bloginfo('url'); ?>/about" class="info-box__btns-btn" target="_blank">
 					<button class="info-box__btns-link"><span>Learn More</span></button>
 				</a>
 			</div>

@@ -2,10 +2,20 @@
   position: absolute;
   z-index: 2;
   top: 0;
-  right: var(--bar-padding-side);
+  right: 0;
+  padding: 0 var(--bar-padding-side);
+  box-sizing: border-box;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: var(--nav-height);
+  width: 100vw;
 }
+.nav.-is-about {
+  border-bottom: 1px solid $c-body;
+  background-color: $c-background;
+}
+
 .nav__item {
   padding: 1rem 1rem;
   border: none;
@@ -27,4 +37,22 @@
       text-decoration: underline;
     }
   }
+}
+.nav.-is-about {
+  .nav__item:first-child {
+    text-decoration: underline;
+    pointer-events: none;
+  }
+}
+
+.nav__left {
+  display: none;
+}
+.nav.-is-about {
+  .nav__left {
+    display: block;
+  }
+}
+.nav__logo {
+  width: 8rem;
 }
