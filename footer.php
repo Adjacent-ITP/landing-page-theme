@@ -18,7 +18,7 @@
 					</div>
 					<div class="footer__main-center">
 						<div class="footer__main-icons">
-							<a href="#" class="footer__main-icon">
+							<a href="https://www.instagram.com/itp_nyu/" target="_blank" rel="noreferrer noopener" class="footer__main-icon">
 								<div class="footer__main-icon-svg">
 									<svg width="37px" height="37px" viewBox="0 0 37 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 											<title>instagram</title>
@@ -36,7 +36,7 @@
 									</svg>
 								</div>
 							</a>
-							<a href="#" class="footer__main-icon">
+							<a href="https://twitter.com/itp_nyu" target="_blank" rel="noreferrer noopener" class="footer__main-icon">
 								<div class="footer__main-icon-svg">
 									<svg width="40px" height="33px" viewBox="0 0 40 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 											<title>twitter</title>
@@ -55,7 +55,7 @@
 						</div>
 					</div>
 					<div class="footer__main-bottom">
-						<p class="footer__main-bottom-info">CREATED BY <a href="#">@ITP_NYU</a></p>
+						<p class="footer__main-bottom-info">CREATED BY <a href="https://twitter.com/itp_nyu" target="_blank" rel="noreferrer noopener">@ITP_NYU</a></p>
 					</div>
 				</div>
 			</div>
