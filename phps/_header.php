@@ -26,8 +26,11 @@
 	</div>
 
 	<div class="header__info">
-		<?php if (have_posts()): ?>
-		<?php the_post(); ?>
+		<?php
+			$all_posts = get_posts( array('posts_per_page' => 1) );
+			setup_postdata( $post );
+		?>
+		<?php foreach ($all_posts as $key=>$post) : ?>
 		<a href="https://itp.nyu.edu/adjacent/issue-<?php the_field('issue_number'); ?>" class="header-latest">
 			<div class="header-latest__top">
 				<span class="header-latest__heading">LATEST ISSUE</span>
@@ -41,7 +44,10 @@
 				<span class="header-latest__cta">Read Full Issue  ></span>
 			</div>
 		</a>
-		<?php endif; ?>
+			<?php
+				endforeach;
+				wp_reset_postdata();
+			?>
 	</div>
 
 	<div class="header__grids">
