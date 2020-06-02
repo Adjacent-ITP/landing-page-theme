@@ -15,6 +15,9 @@
 
 	<head>
 
+		<title> ADJACENT </title>
+		<meta name="title" content="ADJACENT">
+		<meta name="description" content="ADJACENT">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
