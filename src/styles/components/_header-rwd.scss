@@ -10,11 +10,24 @@
     transform: none;
     left: 0;
     right: auto;
-    top: calc(45vh + 2rem);
+    top: calc(#{$hero-height-mobile-small} + 2rem);
     width: 95vw;
     max-width: 95vw;
-    height: 45vh;
-    max-height: 45vh;
+    height: $hero-height-mobile-small;
+    max-height: $hero-height-mobile-small;
+  }
+
+  .header-latest__main {
+    min-height: 200px;
+    max-height: 200px;
+  }
+
+  .header-latest__heading {
+    font-size: 0.875rem;
+    margin-bottom: 0;
+  }
+  .header-latest__title {
+    font-size: 3rem;
   }
 }
 

@@ -1,0 +1,24 @@
+@include media("below-tablet") {
+  .info-box__main {
+    padding-bottom: 2rem;
+  }
+
+  .info-box__info {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .info-box__btns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-box__btns-btn {
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+
+  .info-box__btns-link {
+    font-size: 0.875rem;
+    margin-bottom: 0 !important;
+  }
+}

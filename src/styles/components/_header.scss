@@ -13,7 +13,7 @@ $hero-height-small: 45vh;
 $info-height-small: calc(100vh - #{$hero-height-small});
 $dot-size-small: calc(#{$hero-height-small} / 20);
 
-$hero-height-mobile-small: 45vh;
+$hero-height-mobile-small: 40vh;
 $info-height-mobile-small: calc(100vh - #{$hero-height-mobile-small});
 
 .header__hero-title {
