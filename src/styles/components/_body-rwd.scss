@@ -13,10 +13,22 @@
   .grid-container {
     flex-direction: column;
     max-width: 100vw;
+    margin-top: 15%;
+    margin-bottom: 0;
   }
   .card {
     max-width: 100vw;
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .card__head {
+    margin-top: -3.5rem;
+  }
+  .card__content {
+    line-height: 1.3;
   }
   .card.-right,
   .grid-container.-is-reversed .card.-left {
@@ -43,6 +55,9 @@
 }
 
 @include media("below-mobile") {
+  .grid-container {
+    margin-top: 20%;
+  }
   .card__head-index {
     bottom: -25%;
   }

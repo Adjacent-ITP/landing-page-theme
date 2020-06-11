@@ -1,25 +1,47 @@
-$header-height: 60vh;
-$header-height-desktop: 65vh;
-$header-height-small: 100vh;
+:root {
+  --bar-padding-side: 3rem;
+  --bar-padding-horizontal: 1.5rem;
+  --nav-height: 80px;
+  --header-height: 80vh;
+}
 
-$menu-height: calc(100vh - #{$header-height});
+@include media("below-large") {
+  :root {
+    --header-height: 65vh;
+  }
+}
+
+@include media("below-medium") {
+  :root {
+    --header-height: 62.5vh;
+  }
+}
+
+@media (max-width: 1170px) {
+  :root {
+    --header-height: 55vh;
+  }
+}
+
+@include media("below-desktop") {
+  :root {
+    --header-height: 60vh;
+    --bar-padding-side: 1.5rem;
+    --bar-padding-horizontal: 0.8rem;
+    --nav-height: 64px;
+  }
+}
+
+@include media("below-desktop") {
+  :root {
+    --header-height: 100vh;
+  }
+}
+
+$menu-height: calc(100vh - var(--header-height));
 $menu-height-desktop: 5rem;
 
 $footer-height: 400px;
 $footer-bar-height: 64px;
 
 $footer-height-small: 400px;
-
-:root {
-  --bar-padding-side: 3rem;
-  --bar-padding-horizontal: 1rem;
-  --nav-height: 80px;
-}
-
-@include media("below-desktop") {
-  :root {
-    --bar-padding-side: 1.5rem;
-    --bar-padding-horizontal: 0.8rem;
-    --nav-height: 64px;
-  }
-}

@@ -10,7 +10,7 @@
 				<?php if($index % 2 != 0): $colFlag = "-left"; ?>
 				<?php else: $colFlag = "-right";?>
 				<?php endif; ?>
-				<?php if($index > 4): $hiddenFlag = " -is-hidden"; endif; ?>
+				<?php if($index > 8): $hiddenFlag = " -is-hidden"; endif; ?>
 					<div class="card <?php echo $colFlag; echo $hiddenFlag; ?>">
 						<a href="https://itp.nyu.edu/adjacent/issue-<?php the_field('issue_number'); ?>" class="card__link">
 							<div class="card__container">
@@ -28,6 +28,7 @@
 										src="<?php the_field('feature_image'); ?>"
 										alt="<?php the_field('title'); ?>"
 									>
+									<!-- <div class="card__thumbnail-img" style="background-image: url('<?php the_field('feature_image'); ?>')"></div> -->
 								</div>
 								<div class="card__content <?php echo $colFlag; ?>">
 									<p class="card__content-text -brief"><?php the_field('description'); ?></p>

@@ -1,7 +1,7 @@
 .main {
   background-color: $c-background;
   z-index: 1;
-  padding: 10% 0;
+  padding-bottom: 10%;
   position: relative;
 }
 
@@ -15,7 +15,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0 auto 10% auto;
+  margin: 10% auto;
   max-width: 80vw;
 }
 .grid-container {
@@ -39,7 +39,7 @@
 }
 @include media("below-desktop") {
   :root {
-    --card-size: 40vw;
+    --card-size: 45vw;
   }
 }
 $card-content-width: 80%;
@@ -49,7 +49,7 @@ $card-side-margin: 10%;
 .card {
   max-width: var(--card-size);
   min-width: var(--card-size);
-  margin-bottom: 8rem;
+  margin-bottom: 6.5rem;
   border: none;
 
   &.-right {
@@ -81,9 +81,10 @@ $card-side-margin: 10%;
 }
 
 .card__head {
-  position: relative;
+  display: flex;
+  position: absolute;
+  margin-top: -3rem;
   z-index: 3;
-  padding-top: 6vh;
   padding-bottom: 2.5%;
   width: $card-content-width;
 
@@ -107,7 +108,7 @@ $card-side-margin: 10%;
 }
 
 .card__head-index {
-  position: absolute;
+  // position: absolute;
   left: calc(#{$card-index-width} * -0.8);
   bottom: -50%;
   width: $card-index-width;
@@ -124,12 +125,15 @@ $card-side-margin: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
+  // min-height: 45vh;
+  // max-height: 45vh;
 
   &-img {
-    display: block;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    height: auto;
     z-index: 2;
+    transition: transform .3s;
   }
 }
 
@@ -172,9 +176,9 @@ $hover-box-width: calc(#{$card-content-width} + 10%);
   &:after {
     content: "";
     position: absolute;
-    top: 0;
+    top: -15%;
     width: $hover-box-width;
-    height: 100%;
+    height: 115%;
     border: 1px solid transparent;
     transition: border-color 0.3s;
 
@@ -198,6 +202,11 @@ $hover-box-width: calc(#{$card-content-width} + 10%);
       &:after {
         border-color: $c-theme;
         transition: border-color 0.3s;
+      }
+
+      & .card__thumbnail-img {
+        transform: scale(1.25);
+        transition: transform .3s;
       }
     }
   }
@@ -232,12 +241,14 @@ $hover-box-width: calc(#{$card-content-width} + 10%);
   &__btn {
     font-family: $f-body-bold;
     font-size: $fs-subtitle;
+    color: $c-theme;
+    text-decoration: underline;
     border: none;
     background-color: transparent;
 
     @include media("above-desktop") {
       &:hover {
-        text-decoration: underline;
+        color: $c-theme-dark;
       }
     }
   }

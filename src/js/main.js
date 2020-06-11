@@ -3,7 +3,7 @@ window.onload = () => {
     /*
      ** variables
      */
-    const revealCount = 4;
+    const revealCount = 8;
     const hiddenFlag = "-is-hidden";
 
     /*
@@ -20,6 +20,13 @@ window.onload = () => {
     const cards = Array.from(document.getElementsByClassName("card"));
     const cardsContainer = document.getElementsByClassName("grid-container")[0];
     const loadMoreBtn = document.getElementsByClassName("load-link")[0];
+
+    /*
+     ** hide loadmore if less than 8 cards
+    */
+    if (cards.length < revealCount) {
+      loadMoreBtn.classList.add('-is-hidden')
+    }
 
     /*
      ** menu dropdown
