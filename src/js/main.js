@@ -74,7 +74,9 @@ window.onload = () => {
             else cardsContainer.classList.remove("-is-reversed");
 
             // 2. show load more btn
-            loadMoreBtn.classList.remove(hiddenFlag);
+            if (cards.length > revealCount) {
+              loadMoreBtn.classList.remove(hiddenFlag);
+            }
 
             // 3. hide the not revealing cards
             hideCards(!isRemoving);

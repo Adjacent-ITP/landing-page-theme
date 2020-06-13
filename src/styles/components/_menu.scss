@@ -62,7 +62,7 @@
 
   &-btn:hover {
     border-bottom: 1px solid $c-body;
-    transform: translate3d(0, 1px, 0);
+    margin-bottom: -1px;
   }
 
   &:after {
