@@ -77,8 +77,13 @@
 
 .footer__main-center,
 .footer__main-bottom {
-  display: flex;
-  align-items: center;
+  text-align: center;
+}
+
+.footer__main-bottom-tiny {
+  font-size: 0.7rem;
+  margin-top: 2rem;
+  line-height: 1.5;
 }
 
 .footer__main-center {

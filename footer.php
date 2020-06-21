@@ -56,6 +56,11 @@
 					</div>
 					<div class="footer__main-bottom">
 						<p class="footer__main-bottom-info">CREATED BY <a href="https://twitter.com/itp_nyu" target="_blank" rel="noreferrer noopener">@ITP_NYU</a></p>
+						<p class="footer__main-bottom-tiny">
+							Published by <a target="_blank" href="https://itp.nyu.edu/">ITP &amp; IMA</a>, Tisch School of the Arts, New York University.
+							<a href="https://www.nyu.edu/footer/accessibility.html" target="_blank">Accessibility</a>.
+							<a href="http://eepurl.com/gJqnwr" target="_blank">Subscribe to the newsletter.</a>
+						</p>
 					</div>
 				</div>
 			</div>

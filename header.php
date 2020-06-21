@@ -17,7 +17,7 @@
 
 		<title> ADJACENT </title>
 		<meta name="title" content="ADJACENT">
-		<meta name="description" content="ADJACENT">
+		<meta name="description" content="ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of New York University (often just called ITP). Our mission is to share research, analysis, and opinion from and for the diverse creators that are exploring the contemporary moment.">
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
