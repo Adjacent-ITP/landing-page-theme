@@ -16,8 +16,15 @@
 							<div class="card__container">
 								<a href="<?php the_field('issue_link');?>" class="card__link">
 									<div class="card__head <?php echo $colFlag; ?>">
-										<p class="card__head-index -f-title"> <?php echo $wp_query->post_count - $index + 1; ?> </p>
-										<h2 class="card__head-title -f-title"><?php the_title(); ?></h2>
+
+										<!-- <p class="card__head-index -f-title"> 1<?php //echo $wp_query->post_count - $index + 1; ?> </p>
+										<h2 class="card__head-title -f-title">
+											<p class="card__head-index -f-title"> 1<?php //echo $wp_query->post_count - $index + 1; ?> </span>
+											<?php //the_title(); ?>
+										</h2> -->
+
+										<span class="card__head-index -f-title"><?php echo $wp_query->post_count - $index + 1; ?></span>
+										<span class="card__head-title -f-title"> <?php the_title(); ?> </span>
 									</div>
 									<div class="card__thumbnail <?php echo $colFlag; ?>">
 										<img
@@ -29,7 +36,7 @@
 								</a>
 								<div class="card__content <?php echo $colFlag; ?>">
 									<?php the_field('description'); ?>
-									<p class="card__content-text -date">Published on <?php echo the_field('published_date'); ?></p>
+									<p class="card__content-text -date">Published in <?php echo the_field('published_date'); ?></p>
 								</div>
 							</div>
 						</div>

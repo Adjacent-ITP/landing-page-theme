@@ -1,88 +1,8 @@
 [
     {
-        "key": "group_5ed56e57550b2",
-        "title": "About",
-        "fields": [
-            {
-                "key": "field_5ed56e5d1359e",
-                "label": "Intro",
-                "name": "intro",
-                "type": "wysiwyg",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "tabs": "all",
-                "toolbar": "basic",
-                "media_upload": 0,
-                "delay": 0
-            },
-            {
-                "key": "field_5ed56e631359f",
-                "label": "Thanks To",
-                "name": "thanks_to",
-                "type": "wysiwyg",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "tabs": "all",
-                "toolbar": "basic",
-                "media_upload": 0,
-                "delay": 0
-            }
-        ],
-        "location": [
-            [
-                {
-                    "param": "page",
-                    "operator": "==",
-                    "value": "373"
-                }
-            ]
-        ],
-        "menu_order": 0,
-        "position": "acf_after_title",
-        "style": "default",
-        "label_placement": "top",
-        "instruction_placement": "label",
-        "hide_on_screen": "",
-        "active": true,
-        "description": ""
-    },
-    {
         "key": "group_5e6c001359896",
         "title": "Issue Information",
         "fields": [
-            {
-                "key": "field_5e6c0016f1795",
-                "label": "Title",
-                "name": "title",
-                "type": "text",
-                "instructions": "Title\/theme of the issue",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
             {
                 "key": "field_5e6c0049f1796",
                 "label": "Description",
@@ -106,25 +26,8 @@
                 "key": "field_5e6c008ef1797",
                 "label": "Published Date",
                 "name": "published_date",
-                "type": "date_picker",
-                "instructions": "Month and year as the issue published",
-                "required": 1,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "display_format": "F, Y",
-                "return_format": "F, Y",
-                "first_day": 1
-            },
-            {
-                "key": "field_5e6c0106f1798",
-                "label": "Issue Number",
-                "name": "issue_number",
-                "type": "number",
-                "instructions": "Number of the issue",
+                "type": "text",
+                "instructions": "Month and year the issue was published",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -136,16 +39,14 @@
                 "placeholder": "",
                 "prepend": "",
                 "append": "",
-                "min": 1,
-                "max": "",
-                "step": 1
+                "maxlength": ""
             },
             {
-                "key": "field_5e6c0130f1799",
-                "label": "Feature Image",
-                "name": "feature_image",
-                "type": "image",
-                "instructions": "Feature image of the issue (w: 445, h: 240)",
+                "key": "field_5e6c0106f1798",
+                "label": "Issue Link",
+                "name": "issue_link",
+                "type": "url",
+                "instructions": "URL for the issue",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -153,23 +54,15 @@
                     "class": "",
                     "id": ""
                 },
-                "return_format": "url",
-                "preview_size": "medium",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
+                "default_value": "",
+                "placeholder": ""
             },
             {
-                "key": "field_5e73e4c2261b9",
-                "label": "Issue Number Image",
-                "name": "issue_number_image",
+                "key": "field_5e6c0130f1799",
+                "label": "Feature Image",
+                "name": "feature_image",
                 "type": "image",
-                "instructions": "Image of issue number",
+                "instructions": "Feature image of the issue (w: 445, h: 240)",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -205,6 +98,7 @@
         "instruction_placement": "label",
         "hide_on_screen": "",
         "active": true,
-        "description": ""
+        "description": "",
+        "modified": 1592755192
     }
 ]

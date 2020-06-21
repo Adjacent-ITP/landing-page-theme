@@ -45,41 +45,44 @@
 }
 
 .about {
+  h1,
   h2,
   h3 {
     font-family: $f-sub;
   }
 
-  h2 {
+  h1 {
     font-size: 4.5rem;
   }
-  h3 {
+  h2 {
     font-size: 2.625rem;
+    margin: 5rem 0 2.5rem 0;
   }
-  h4 {
+  h3 {
     font-size: 1.125rem;
   }
 
   p {
     font-size: 0.875rem;
     line-height: 1.5rem;
+    margin-bottom: 2.5em;
   }
 }
 
 .about__top {
-  h2 {
+  h1 {
     margin-bottom: 2.5rem;
   }
 }
 
 .about__btm {
-  h3 {
+  h2 {
     margin-bottom: 2.5rem;
   }
 }
 
 .team {
-  h3 {
+  h2 {
     margin-bottom: 2.5rem;
   }
 
@@ -120,11 +123,11 @@
     left: 0;
     opacity: 0;
 
-    h4 {
+    h3 {
       margin-bottom: 2.5rem;
       font-weight: bold;
     }
-    h5 {
+    h4 {
       font-weight: bold;
       margin-bottom: 1rem;
 

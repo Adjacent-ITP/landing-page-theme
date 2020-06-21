@@ -16,8 +16,20 @@
 	<head>
 
 		<title> ADJACENT </title>
-		<meta name="title" content="ADJACENT">
+		<meta name="title" content="Adjacent: An online journal of emerging media">
+		<meta property="og:title" content="Adjacent: An online journal of emerging media">
+		<meta name="twitter:title" content="Adjacent: An online journal of emerging media">
+
 		<meta name="description" content="ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of New York University (often just called ITP). Our mission is to share research, analysis, and opinion from and for the diverse creators that are exploring the contemporary moment.">
+		<meta property="og:description" content="ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of New York University (often just called ITP). Our mission is to share research, analysis, and opinion from and for the diverse creators that are exploring the contemporary moment.">
+		<meta name="twitter:description" content="ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program of New York University (often just called ITP). Our mission is to share research, analysis, and opinion from and for the diverse creators that are exploring the contemporary moment.">
+
+		<meta property="og:image" content="<?php echo get_bloginfo('template_directory'); ?>/public/assets/adjacent.jpg">
+		<meta name="twitter:image" content="<?php echo get_bloginfo('template_directory'); ?>/public/assets/adjacent.jpg">
+		<meta name="twitter:card" content="summary_large_image">
+
+
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" >
 
