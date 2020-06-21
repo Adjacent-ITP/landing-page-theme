@@ -31,10 +31,10 @@
 			setup_postdata( $post );
 		?>
 		<?php foreach ($all_posts as $key=>$post) : ?>
-		<a href="https://itp.nyu.edu/adjacent/issue-<?php the_field('issue_number'); ?>" class="header-latest">
+		<a href="<?php the_field('issue_link');?>" class="header-latest">
 			<div class="header-latest__top">
 				<span class="header-latest__heading">LATEST ISSUE</span>
-				<h3 class="header-latest__title"><?php the_field('title'); ?></h3>
+				<h3 class="header-latest__title"><?php the_title(); ?></h3>
 			</div>
 			<div class="header-latest__main">
 				<div class="header-latest__preview" style="background-image: url('<?php the_field('feature_image'); ?>')">
