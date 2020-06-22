@@ -14,7 +14,9 @@
 		<div class="info-box__main">
 			<div class="info-box__info">
 				<h2 class="info-box__info-title">An online journal of emerging media</h2>
-				<p class="info-box__info-text">ADJACENT is an online journal of emerging media published by the Interactive Telecommunications Program, or ITP. Its mission is to share research, reflection, observations, and opinions from and for the diverse creators that are exploring the possibilities and directions at the frontiers of media and technology.</p>
+				<p class="info-box__info-text">
+					ADJACENT is an online journal of emerging media published by the <a href="https://tisch.nyu.edu/itp">Interactive Telecommunications Program</a> of New York University (often just called ITP). Our mission is to share research, analysis, and opinion from and for the diverse creators that are exploring the contemporary moment.
+				</p>
 			</div>
 			<div class="info-box__btns">
 				<a href="http://eepurl.com/gJqnwr" class="info-box__btns-btn" target="_blank" rel="noreferrer noopener">

@@ -16,7 +16,7 @@
 	<head>
 
 		<title> ADJACENT </title>
-		<meta name="title" content="Adjacent: An online journal of emerging media">
+		<meta name="title" content="ADJACENT: An online journal of emerging media">
 		<meta property="og:title" content="Adjacent: An online journal of emerging media">
 		<meta name="twitter:title" content="Adjacent: An online journal of emerging media">
 
