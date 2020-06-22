@@ -88,7 +88,7 @@ $card-side-margin: 10%;
   display: flex;
   align-items: start;
   position: absolute;
-  margin-top: -3.25rem;
+  margin-top: -4rem;
   margin-left: -0.8rem;
   z-index: 3;
   // padding-bottom: 2.5%;
@@ -106,9 +106,8 @@ $card-side-margin: 10%;
 
 .card__head-index {
   font-size: 10rem;
-  line-height: 1;
-  font-family: monospace;
-  letter-spacing: -1.5rem;
+  line-height: 0.7;
+  letter-spacing: -0.75rem;
   -webkit-text-stroke: 1.5px blue;
   -webkit-text-fill: transparent;
   color: transparent;
